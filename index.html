@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCAI Coders - Learning Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="head.png" alt="FCAI Coders Logo" class="nav-logo">
+                <span>FCAI Coders</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#materials" class="nav-link">Materials</a>
+                <a href="#contact" class="nav-link">Follow Us</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="hero-title">
+                <img src="Your paragraph text.png" alt="FCAI Coders Logo" class="hero-logo">
+                <span>FCAI Coders</span>
+            </h1>
+            <p class="hero-subtitle">Your Gateway to Learning Excellence</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number"> 600+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-book"></i>
+                    <span class="stat-number"> 30+</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-video"></i>
+                    <span class="stat-number"> 50+</span>
+                    <span class="stat-label">Videos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i>
+                About Us
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Empowering Future Coders</h3>
+                    <p>FCAI Coders is a student-led initiative dedicated to supporting our fellow computer science and AI students in their academic journey. We are a group of passionate students who aim to simplify complex topics by explaining course material, sharing helpful resources, and providing hands-on training.</p>
+                    <p>Our goal is to bridge the gap between lectures and real understanding through interactive explanations, educational videos, and practical exercises. We believe that effective learning should be accessible, engaging, and driven by students for students.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Practical Learning</h4>
+                            <p>Hands-on projects and real-world applications</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Flexible Schedule</h4>
+                            <p>Learn at your own pace, anytime, anywhere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials-section" id="materials">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-book-open"></i>
+                Learning Materials
+            </h2>
+            
+            <!-- First Year Section -->
+            <section class="year-section" id="first-year">
+                <h3 class="year-title">
+                    <i class="fas fa-star"></i>
+                    First Year
+                </h3>
+                
+                <div class="semester-grid first-year-semester-grid">
+                    <!-- First Semester -->
+                    <div class="semester-card first-year-first-semester">
+                        <h4 class="semester-title">
+                            <i class="fas fa-book"></i>
+                            First Semester
+                        </h4>
+                        <button class="show-courses-btn" onclick="toggleCourses('first-semester')">
+                            <i class="fas fa-eye"></i>
+                            Show Courses
+                        </button>
+                        <div class="courses-container" id="first-semester-courses">
+                            <div class="course-item">
+                                <h5>Fundamentals of
+                                    Computer Science</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=DORa9B4kM2U&list=PLu9xARoolRsaYPZERDhJkSdWfOyoJ85qT " target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1aHNMToreBxyyrZM19jbW2fcMXsUr1upK?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Discrete
+                                    Mathematics</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=jXHDsYVrhlY&list=PLjGDfD8nOvN264Qkk0QAunTUg5wWBa9AF&pp=0gcJCWUEOCosWNin"target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1lMtdNY7Xdy_w1hccMQXKZP4u1bfn4EXL?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Electronics</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/@elhamshawky9011" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1YGFm1s1upgUNBUOPb6TFq9UShPOzwVUq?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                           
+                            <div class="course-item">
+                                <h5>Math-0</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=joewRl1CTL8&list=PLjGDfD8nOvN1Szep40ZFrDtcp5Ix4QiSF" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/13Tdv6ckU8F11NHAx8PHxyzRs5ysFiM_6?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Math-1</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=LIGVlYhbFDc&list=PLjGDfD8nOvN3Bc_j9FmSJom0B7K0oMhHG" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1T8lswPRc3wzzZWVR2Q2E8U05DULzOe15?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Creative Thinking and
+                                    Communication Skills</h5>
+                                <div class="course-links">
+                                    <a href="https://drive.google.com/drive/folders/1sMoPvSA46MrfJJRgblvnZZ8CiS5NlTUI?usp=drive_link" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1QpXPkeR41AmPdwi9vcXxFECE2Iyx1UA7?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Technical Report
+                                    Writing</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1QPIhfC38WT7NGG4XVTIB44awY8MY9ey5?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Semester -->
+                    <div class="semester-card first-year-second-semester">
+                        <h4 class="semester-title">
+                            <i class="fas fa-book-open"></i>
+                            Second Semester
+                        </h4>
+                        <button class="show-courses-btn" onclick="toggleCourses('second-semester')">
+                            <i class="fas fa-eye"></i>
+                            Show Courses
+                        </button>
+                        <div class="courses-container" id="second-semester-courses">
+                            <div class="course-item">
+                                <h5>Structured
+                                    Programming </h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=z1FdInL8sjg&list=PLCInYL3l2AajFAiw4s1U4QbGszcQ-rAb3" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1kIlexG-5vVjuiYYQznPkw1re9CO8KFzQ?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Probability and Statistics-1</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=QzkbJVtbVPA&list=PLntliy4I5XRxb7zMJt-mdRlBvIgFfMHoA" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1kLyz2yLG0AYZLcSFYyRMBQqL87PsSRZo?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Math-2</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=YPHZ5aPXcO4&list=PLjGDfD8nOvN0bLN1OFu-Iia3tv0q0uiFW" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1k82bfOvHaUssmxOhIHF0YlQgzHFMcBv9?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Math-1</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=LIGVlYhbFDc&list=PLjGDfD8nOvN3Bc_j9FmSJom0B7K0oMhHG" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1r0wCHR4iXug4AUuG2rQab5xId2nY1fH5?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Logic Design</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=0rLiYpy2CqQ&list=PLjGDfD8nOvN0m-bPT0X_PqQwlmyZ6S6ih" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1WQxi0bLUipkqN9MT-jVI5Lhx6zPH4wTP?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Selected Topics in
+                                    Humanities</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1ppVtC0wBLnqk_CIpe2FMGH5nqh_O6Zl2?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Ethics and
+                                    professionalism</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=830ildjal5U&list=PL3W2wf7FrICK1S6hiZ1WACrDfcDQq9iK3" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1kEFvnfhNigBWrrr697rv8_hbPGPSHPLD?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Fundamentals of
+                                    Economies</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=JBSj1MlBvF4&list=PLjGDfD8nOvN02YLCXzkkDuqcifsi_At_w" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1ZZZqYgqhUDbz8qOtBDklUq_PzwPH-yYH?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Critical Thinking</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=zDuCDNEKtuo&list=PLjGDfD8nOvN2BznsQ3nq8i2WaH-3er9M7" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1QUvB7NYFyHmTdVR3gmrWgHtBPW_vOIOI?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summer Semester -->
+                    <div class="semester-card first-year-summer-semester">
+                        <h4 class="semester-title">
+                            <i class="fas fa-sun"></i>
+                            Summer Semester
+                        </h4>
+                        <button class="show-courses-btn" onclick="toggleCourses('summer-semester')">
+                            <i class="fas fa-eye"></i>
+                            Show Courses
+                        </button>
+                        <div class="courses-container" id="summer-semester-courses">
+                            <div class="course-item">
+                                <h5>Math-2</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=YPHZ5aPXcO4&list=PLjGDfD8nOvN0bLN1OFu-Iia3tv0q0uiFW" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/13SnbVywWVCEwPRiY9yNowibP_PtQ4m9B?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Probability and Statistics-1</h5>
+                                <div class="course-links">
+                                    <a href="https://www.youtube.com/watch?v=QzkbJVtbVPA&list=PLntliy4I5XRxb7zMJt-mdRlBvIgFfMHoA" target="_blank" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="https://drive.google.com/drive/folders/1kLyz2yLG0AYZLcSFYyRMBQqL87PsSRZo?usp=drive_link" target="_blank" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Second Year Section -->
+            <section class="year-section" id="second-year">
+                <h3 class="year-title">
+                    <i class="fas fa-star"></i>
+                    Second Year
+                </h3>
+                
+                <div class="semester-grid second-year-semester-grid">
+                    <!-- First Semester -->
+                    <div class="semester-card second-year-first-semester">
+                        <h4 class="semester-title">
+                            <i class="fas fa-book"></i>
+                            First Semester
+                        </h4>
+                        <button class="show-courses-btn" onclick="toggleCourses('second-year-first-semester')">
+                            <i class="fas fa-eye"></i>
+                            Show Courses
+                        </button>
+                        <div class="courses-container" id="second-year-first-semester-courses">
+                            <div class="course-item">
+                                <h5>Computer Networks
+                                    Technology</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Math-3</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Object Oriented
+                                    Programming (OOP)</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Logic Design</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>probability and Statistics-2</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Introduction to
+                                    Operations Research
+                                    and Decision Support</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Entrepreneurship</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Second Semester -->
+                    <div class="semester-card second-year-second-semester">
+                        <h4 class="semester-title">
+                            <i class="fas fa-book-open"></i>
+                            Second Semester
+                        </h4>
+                        <button class="show-courses-btn" onclick="toggleCourses('second-year-second-semester')">
+                            <i class="fas fa-eye"></i>
+                            Show Courses
+                        </button>
+                        <div class="courses-container" id="second-year-second-semester-courses">
+                            <div class="course-item">
+                                <h5>Introduction to
+                                    Database Systems</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Introduction to Software Engineering</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Web Technology</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Data Structures</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Fundamentals of
+                                    Management</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <h5>Social Issues</h5>
+                                <div class="course-links">
+                                    <a href="#" class="resource-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        YouTube
+                                    </a>
+                                    <a href="#" class="resource-link drive">
+                                        <i class="fab fa-google-drive"></i>
+                                        Drive
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+                <section class="help-resources-section" id="help-resources">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fab fa-youtube"></i>
+                    Video Tutorials
+                </h2>
+                <p class="section-subtitle">Discover the best YouTube channels for learning programming, computer science, and software development</p>
+                <div class="help-resources-grid">
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>FCAI 28</h3>
+                        <P>Simple explanations, problem-solving, and applications for most college subjects.</P>
+                        <a href="https://www.youtube.com/@FCAI.2028" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>Enlighten Your Brain</h3>
+                        <p>Clear and simple lessons by D.Doaa Ghaleb in Math, Discrete Math, and Programming.</p>
+                        <a href="https://www.youtube.com/@enlightenyourbrain" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>Decode It | Alaa</h3>
+                        <p>Learn Logic Design easily with clear explanations, simple examples by Eng.Alaa.</p>
+                        <a href="https://www.youtube.com/@alaaazima63" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>
+                            El Khwarizmy</h3>
+                        <p>Clear Math lessons with solved examples, taught by Eng.Ziad.</p>
+                        <a href="https://www.youtube.com/@El-Khwarizmy" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>Elba4mobarmg</h3>
+                        <p>Simple explanations for various college subjects by Eng.Farouk.</p>
+                        <a href="https://www.youtube.com/@elba4mobarmg" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>
+                            Abdalla Fadl</h3>
+                        <p>Simple and clear lessons on Computer Science,and Problem Solving.</p>
+                        <a href="https://www.youtube.com/@AbdallaFadl" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>ICPC FCAI CU</h3>
+                        <p>Competitive Programming lessons and contest preparation.</p>
+                        <a href="https://www.youtube.com/@ICPCFCAICU" target="_blank" class="help-link">
+                            <i class="fab fa-youtube"></i>
+                            Visit Channel
+                        </a>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i>
+                Follow Us
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Follow Us</h3>
+                    <p>Follow Us to get the latest lessons, problem-solving tips, and practical applications for college subjects. Stay updated with our new content and join our growing community of learners.</p>
+                    <div class="contact-details">
+
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:coders2028@gmail.com" target="_blank" class="contact-link email">
+                        <i class="fas fa-envelope"></i>
+                        Email Us
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VbAwSfIAzNbtIy6HPh2R" target="_blank" class="contact-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Channel
+                    </a>
+                    <a href="https://www.youtube.com/@FCAI.2028"target="_blank" class="contact-link youtube">
+                        <i class="fab fa-youtube"></i>
+                        YouTube Channel
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1l5c1NG_O_SolvCF33lqOGZcDYkKO3JHc?usp=drive_link" target="_blank" class="contact-link drive">
+                        <i class="fab fa-google-drive"></i>
+                        Drive Resources
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FCAI Coders</h4>
+                    <p>Empowering students with quality education and practical skills for the future of technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#materials">Materials</a></li>
+                        <li><a href="#contact">Follow Us</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Omar Rady. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+   
+      
+    <script src="script.js"></script>
+</body>
+</html>
