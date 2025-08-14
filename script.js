@@ -31,20 +31,28 @@ function initializeDarkMode() {
 
 // Function to toggle course visibility
 function toggleCourses(semesterId) {
-    const coursesContainer = document.getElementById(semesterId + '-courses');
-    const button = event.target;
-    
-    if (coursesContainer.classList.contains('show')) {
-        // Hide courses
-        coursesContainer.classList.remove('show');
-        button.innerHTML = '<i class="fas fa-eye"></i> Show Courses';
-        button.style.background = 'var(--gradient)';
-    } else {
-        // Show courses
-        coursesContainer.classList.add('show');
-        button.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Courses';
-        button.style.background = 'linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%)';
-    }
+	const coursesContainer = document.getElementById(semesterId + '-courses');
+	if (!coursesContainer) return;
+
+	// Button is placed immediately before the container in markup
+	const button = coursesContainer.previousElementSibling;
+	
+	const isOpen = coursesContainer.classList.contains('show');
+	if (isOpen) {
+		coursesContainer.classList.remove('show');
+		if (button && button.classList && button.classList.contains('show-courses-btn')) {
+			button.innerHTML = '<i class="fas fa-eye"></i> Show Courses';
+			button.style.background = 'var(--gradient)';
+			button.setAttribute('aria-expanded', 'false');
+		}
+	} else {
+		coursesContainer.classList.add('show');
+		if (button && button.classList && button.classList.contains('show-courses-btn')) {
+			button.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Courses';
+			button.style.background = 'linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%)';
+			button.setAttribute('aria-expanded', 'true');
+		}
+	}
 }
 
 // Mobile menu functionality
