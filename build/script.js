@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const href = this.getAttribute('href');
             if (href === '#' || href.includes('your-')) {
                 e.preventDefault();
-                alert('Please update the link with your actual URL');
+                alert('No Content Added yet');
             }
         });
     });
@@ -376,3 +376,4 @@ window.FCAICoders = {
     updateContactLinks,
     smoothScrollTo
 };
+
