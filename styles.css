@@ -165,7 +165,7 @@ body {
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
@@ -1461,5 +1461,6 @@ html {
         transform: none;
     }
 }
+
 
 
